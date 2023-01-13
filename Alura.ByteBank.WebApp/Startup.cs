@@ -77,6 +77,7 @@ namespace Alura.ByteBank.WebApp
             {
                 app.UseDeveloperExceptionPage();
             }
+
             else
             {
                 app.UseExceptionHandler("/Home/Error");
@@ -110,6 +111,7 @@ namespace Alura.ByteBank.WebApp
                     name: "default",
                     pattern: "{controller=Home}/{action=PrincipalHome}/{id?}");
             });
+            app.UseDeveloperExceptionPage();
         }
     }
 }
